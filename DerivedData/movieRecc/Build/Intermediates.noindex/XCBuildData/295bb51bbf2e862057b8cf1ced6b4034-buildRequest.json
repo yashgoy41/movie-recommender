@@ -1,0 +1,57 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "3e15140eaa761629c0b468ec7df0bd4eb8d15466593d003115dc5fd965810065"
+    }
+  ],
+  "containerPath" : "/Users/yash/Desktop/CS32/movieRecc/movieRecc.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx13.1",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/yash/Desktop/CS32/movieRecc/DerivedData/movieRecc/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/yash/Desktop/CS32/movieRecc/DerivedData/movieRecc/Build/Products",
+      "derivedDataPath" : "/Users/yash/Desktop/CS32/movieRecc/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/yash/Desktop/CS32/movieRecc/DerivedData/movieRecc/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/yash/Desktop/CS32/movieRecc/DerivedData/movieRecc/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/yash/Desktop/CS32/movieRecc/DerivedData/movieRecc/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

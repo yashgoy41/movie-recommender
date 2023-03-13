@@ -2,8 +2,6 @@
 #define TREEMULTIMAP_INCLUDED
 
 #include <vector>
-#include <type_traits>
-
 
 class Node;
 template <typename KeyType, typename ValueType>
@@ -54,12 +52,12 @@ class TreeMultimap
     {
         // Replace this line with correct code.
         // Tree is empty
-        Node* newNode = new Node(key,value);
+       
         if(m_root == nullptr){
-           m_root = newNode;
+            Node* newNode = new Node(key,value);
+            m_root = newNode;
             return;
         }
-        // Traverse Right
         Node* curNode = m_root;
         while(true){
             if(key == curNode->m_key){
@@ -68,6 +66,7 @@ class TreeMultimap
             }
             if(key > curNode->m_key){
                 if(curNode->m_rightChild == nullptr){
+                    Node* newNode = new Node(key,value);
                     curNode->m_rightChild = newNode;
                     return;
                 }
@@ -77,6 +76,7 @@ class TreeMultimap
             }
             else if(key < curNode->m_key){
                 if(curNode->m_leftChild == nullptr){
+                    Node* newNode = new Node(key,value);
                     curNode->m_leftChild = newNode;
                     return;
                 }
@@ -114,9 +114,6 @@ class TreeMultimap
             m_vals.push_back(value);
             m_leftChild = nullptr;
             m_rightChild = nullptr;
-        }
-        ~Node(){
-            m_vals.clear();
         }
     };
     Node* m_root; // root of the tree

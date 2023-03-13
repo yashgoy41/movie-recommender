@@ -70,22 +70,22 @@ void findMatches(const Recommender& r,const MovieDatabase& md, const string& use
 
 int main()
 {
-    TreeMultimap<std::string, std::string> myMap;
-    myMap.insert("Inception", "Christoper Nolan");
-    myMap.insert("Inception", "Leonardo DiCaprio");
-    myMap.insert("Inception", "Ellen Page");
-    myMap.insert("Irreversible", "Monica Bellucci");
-    TreeMultimap<std::string, std::string>::Iterator it =  myMap.find("Inception");
-
-    assert(it.get_value() == "Christoper Nolan");
-    it.advance();
-    assert(it.get_value() == "Leonardo DiCaprio");
-    it.advance();
-    assert(it.get_value() == "Ellen Page");
+//    TreeMultimap<std::string, std::string> myMap;
+//    myMap.insert("Inception", "Christoper Nolan");
+//    myMap.insert("Inception", "Leonardo DiCaprio");
+//    myMap.insert("Inception", "Ellen Page");
+//    myMap.insert("Irreversible", "Monica Bellucci");
+//    TreeMultimap<std::string, std::string>::Iterator it =  myMap.find("Inception");
+//
+//    assert(it.get_value() == "Christoper Nolan");
+//    it.advance();
+//    assert(it.get_value() == "Leonardo DiCaprio");
+//    it.advance();
+//    assert(it.get_value() == "Ellen Page");
     
-//    UserDatabase udb;
-//    udb.load(USER_DATAFILE);
-    cerr << "Passed all tests" << endl;
+    UserDatabase udb;
+    udb.load(USER_DATAFILE);
+//    cerr << "Passed all tests" << endl;
 //    for (;;)
 //    {
 //        cout << "Enter user email address (or quit): ";
@@ -107,17 +107,17 @@ int main()
 //        }
 //    }
 //
-//    MovieDatabase mdb;
-//    mdb.load(MOVIE_DATAFILE);
-//    Recommender r(udb, mdb);
-//    for (;;)
-//    {
-//        cout << "Enter email (or quit): ";
-//        string id;
-//        getline(cin, id);
-//        if (id == "quit")
-//            return 0;
-//        findMatches(r, mdb, id, 20);
+    MovieDatabase mdb;
+    mdb.load(MOVIE_DATAFILE);
+    Recommender r(udb, mdb);
+    for (;;)
+    {
+        cout << "Enter email (or quit): ";
+        string id;
+        getline(cin, id);
+        if (id == "quit")
+            return 0;
+        findMatches(r, mdb, id, 20);
 //        cout << "Enter movie id (or quit): ";
 //        string id;
 //        getline(cin, id);
@@ -174,7 +174,7 @@ int main()
 //            }
 //        }
     
-//    }
+    }
 }
     
     

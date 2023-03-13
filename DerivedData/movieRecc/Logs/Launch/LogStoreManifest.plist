@@ -51,6 +51,51 @@
 			<key>uniqueIdentifier</key>
 			<string>03C0653A-BADE-433A-923A-74404E2B81C0</string>
 		</dict>
+		<key>0681E059-88CC-4C9B-A30D-E289E05446BC</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>14322807-8D3C-4E30-8118-9F17B3260688</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-movieRecc-2023.03.13_00-01-41--0700.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>movieRecc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>movieRecc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run movieRecc</string>
+			<key>timeStartedRecording</key>
+			<real>700383701.47195303</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run movieRecc</string>
+			<key>uniqueIdentifier</key>
+			<string>0681E059-88CC-4C9B-A30D-E289E05446BC</string>
+		</dict>
 		<key>0F2689CE-CF89-4869-8A81-0406DAEB1CB3</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>

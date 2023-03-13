@@ -82,9 +82,8 @@ int main()
 //    assert(it.get_value() == "Leonardo DiCaprio");
 //    it.advance();
 //    assert(it.get_value() == "Ellen Page");
-    
-    UserDatabase udb;
-    udb.load(USER_DATAFILE);
+//    
+   
 //    cerr << "Passed all tests" << endl;
 //    for (;;)
 //    {
@@ -107,6 +106,8 @@ int main()
 //        }
 //    }
 //
+    UserDatabase udb;
+    udb.load(USER_DATAFILE);
     MovieDatabase mdb;
     mdb.load(MOVIE_DATAFILE);
     Recommender r(udb, mdb);

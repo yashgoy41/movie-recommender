@@ -108,6 +108,40 @@
 			<key>uniqueIdentifier</key>
 			<string>0A81FA58-937E-4F88-A79E-F65DDE4F2B88</string>
 		</dict>
+		<key>14322807-8D3C-4E30-8118-9F17B3260688</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>14322807-8D3C-4E30-8118-9F17B3260688.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>movieRecc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>movieRecc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build movieRecc</string>
+			<key>timeStartedRecording</key>
+			<real>700383701.47200799</real>
+			<key>timeStoppedRecording</key>
+			<real>700383702.31015396</real>
+			<key>title</key>
+			<string>Build movieRecc</string>
+			<key>uniqueIdentifier</key>
+			<string>14322807-8D3C-4E30-8118-9F17B3260688</string>
+		</dict>
 		<key>143C48CD-24D0-42DB-8745-CD6B5E56075E</key>
 		<dict>
 			<key>className</key>

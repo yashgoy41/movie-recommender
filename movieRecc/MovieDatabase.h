@@ -30,6 +30,7 @@ class MovieDatabase
     bool loadDirMap();
     bool loadActMap();
     bool loadGenMap();
+    void getNames(std::vector<std::string> &vec, std::string names);
 };
 
 #endif // MOVIEDATABASE_INCLUDED

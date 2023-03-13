@@ -1,22 +1,23 @@
 #include "Movie.h"
 #include <string>
 #include <vector>
-#include <sstream>
 #include <iostream>
 
 using namespace std;
 
-Movie::Movie(const string& id, const string& title,
-             const string& release_year, const string& directors,
-             const string& actors, const string& genres, float rating)
+Movie::Movie(const std::string& id, const std::string& title,
+             const std::string& release_year,
+             const std::vector<std::string>& directors,
+             const std::vector<std::string>& actors,
+             const std::vector<std::string>& genres, float rating)
 {
     m_id = id;
     m_name = title;
     m_year = release_year;
     m_rating = rating;
-    getNames(m_dirs, directors);
-    getNames(m_actors, actors);
-    getNames(m_genres, genres);
+    m_dirs = directors;
+    m_actors = actors;
+    m_genres = genres;
     
 }
 
@@ -55,10 +56,3 @@ vector<string> Movie::get_genres() const
     return m_genres;
 }
 
-void Movie::getNames(std::vector<std::string> &vec, std::string names){
-    std::string name;
-    std::stringstream ss(names);
-    while (getline(ss, name, ',')) {
-        vec.push_back(name);
-    }
-}

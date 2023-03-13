@@ -82,7 +82,5 @@ vector<MovieAndRank> Recommender::recommend_movies(const string& user_email, int
         it++;
         movie_count--;
     }
-//    int num_movies_to_recommend = std::min(movie_count, static_cast<int>(ranked_movies.size())); // ensure we don't try to recommend more movies than are available
-//    ranked_movies.resize(num_movies_to_recommend);
     return topNMovies;
 }

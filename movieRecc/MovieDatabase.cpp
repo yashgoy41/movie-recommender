@@ -4,6 +4,7 @@
 #include <vector>
 #include <fstream>
 #include <iostream>
+#include <sstream>
 
 using namespace std;
 
@@ -156,11 +157,26 @@ bool MovieDatabase::loadMovies(const std::string& filename){
         std::getline(file, line);
         float rating = std::stof(line); // Line 7
         
+        std::vector<std::string> directorList;
+        std::vector<std::string> actorList;
+        std::vector<std::string> genreList;
+        
+        getNames(directorList, directors);
+        getNames(actorList, actors);
+        getNames(genreList, genres);
         // Populate movie array
-        m_movies.push_back(Movie(movie_id, name, year, directors, actors, genres, rating));
+        m_movies.push_back(Movie(movie_id, name, year, directorList, actorList, genreList, rating));
         
         // Skip the blank line between movie records
         std::getline(file, line);
     }
     return true;
+}
+
+void MovieDatabase::getNames(std::vector<std::string> &vec, std::string names){
+    std::string name;
+    std::stringstream ss(names);
+    while (getline(ss, name, ',')) {
+        vec.push_back(name);
+    }
 }

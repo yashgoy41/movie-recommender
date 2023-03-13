@@ -38,13 +38,13 @@
 		D3E130CE29BD7FD400D09738 /* User.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = User.cpp; sourceTree = "<group>"; };
 		D3E130CF29BD7FD400D09738 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D3E130D029BD7FD400D09738 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
-		D3E130D129BD7FD400D09738 /* movies.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = movies.txt; sourceTree = "<group>"; };
 		D3E130D229BD7FD400D09738 /* UserDatabase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserDatabase.cpp; sourceTree = "<group>"; };
 		D3E130D329BD7FD400D09738 /* Recommender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Recommender.cpp; sourceTree = "<group>"; };
 		D3E130D429BD7FD400D09738 /* users.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = users.txt; sourceTree = "<group>"; };
 		D3E130D529BD7FD400D09738 /* Recommender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recommender.h; sourceTree = "<group>"; };
 		D3E130DC29BE890200D09738 /* userTest.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = userTest.txt; sourceTree = "<group>"; };
 		D3E130DD29BE891F00D09738 /* movieTest.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = movieTest.txt; sourceTree = "<group>"; };
+		D3F0D37E29BEDC8C00703D21 /* movies.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = movies.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +78,11 @@
 		D3675B7329B7E29600767078 /* movieRecc */ = {
 			isa = PBXGroup;
 			children = (
+				D3F0D37E29BEDC8C00703D21 /* movies.txt */,
 				D3E130CF29BD7FD400D09738 /* main.cpp */,
 				D3E130CC29BD7FD400D09738 /* Movie.cpp */,
 				D3E130D029BD7FD400D09738 /* Movie.h */,
 				D3E130CA29BD7FD400D09738 /* MovieDatabase.cpp */,
-				D3E130D129BD7FD400D09738 /* movies.txt */,
 				D3E130D329BD7FD400D09738 /* Recommender.cpp */,
 				D3E130D529BD7FD400D09738 /* Recommender.h */,
 				D3E130C929BD7FD400D09738 /* treemm.h */,

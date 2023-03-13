@@ -54,3 +54,11 @@ vector<string> Movie::get_genres() const
 {
     return m_genres;
 }
+
+void Movie::getNames(std::vector<std::string> &vec, std::string names){
+    std::string name;
+    std::stringstream ss(names);
+    while (getline(ss, name, ',')) {
+        vec.push_back(name);
+    }
+}

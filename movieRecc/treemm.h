@@ -1,8 +1,9 @@
 #ifndef TREEMULTIMAP_INCLUDED
 #define TREEMULTIMAP_INCLUDED
 
-#include <list>
+#include <vector>
 #include <type_traits>
+
 
 class Node;
 template <typename KeyType, typename ValueType>
@@ -114,16 +115,18 @@ class TreeMultimap
             m_leftChild = nullptr;
             m_rightChild = nullptr;
         }
+        ~Node(){
+            m_vals.clear();
+        }
     };
     Node* m_root; // root of the tree
     void deleteTree(Node* node) {
-        if (node != nullptr) {
-            // Recursively delete the left and right subtrees
-            deleteTree(node->m_leftChild);
-            deleteTree(node->m_rightChild);
-            // Free the memory associated with the current node
-            delete node;
+        if (node == nullptr) {
+            return;
         }
+        deleteTree(node->m_leftChild);
+        deleteTree(node->m_rightChild);
+        delete node;
     }
 };
 

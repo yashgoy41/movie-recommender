@@ -1,2 +1,2 @@
-dependencies: /Users/yash/Downloads/Pnetphlix/User.cpp \
-  /Users/yash/Downloads/Pnetphlix/User.h
+dependencies: /Users/yash/Desktop/CS32/movieRecc/movieRecc/User.cpp \
+  /Users/yash/Desktop/CS32/movieRecc/movieRecc/User.h

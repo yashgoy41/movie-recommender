@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D3675B8929B7E2A800767078 /* Movie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3675B7B29B7E2A800767078 /* Movie.cpp */; };
-		D3675B8A29B7E2A800767078 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3675B7F29B7E2A800767078 /* main.cpp */; };
-		D3675B8B29B7E2A800767078 /* MovieDatabase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3675B8029B7E2A800767078 /* MovieDatabase.cpp */; };
-		D3675B8C29B7E2A800767078 /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3675B8129B7E2A800767078 /* User.cpp */; };
-		D3675B8D29B7E2A800767078 /* UserDatabase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3675B8529B7E2A800767078 /* UserDatabase.cpp */; };
-		D3675B8E29B7E2A800767078 /* Recommender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3675B8829B7E2A800767078 /* Recommender.cpp */; };
+		D3E130D629BD7FD400D09738 /* MovieDatabase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3E130CA29BD7FD400D09738 /* MovieDatabase.cpp */; };
+		D3E130D729BD7FD400D09738 /* Movie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3E130CC29BD7FD400D09738 /* Movie.cpp */; };
+		D3E130D829BD7FD400D09738 /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3E130CE29BD7FD400D09738 /* User.cpp */; };
+		D3E130D929BD7FD400D09738 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3E130CF29BD7FD400D09738 /* main.cpp */; };
+		D3E130DA29BD7FD400D09738 /* UserDatabase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3E130D229BD7FD400D09738 /* UserDatabase.cpp */; };
+		D3E130DB29BD7FD400D09738 /* Recommender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3E130D329BD7FD400D09738 /* Recommender.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,20 +29,22 @@
 
 /* Begin PBXFileReference section */
 		D3675B7129B7E29600767078 /* movieRecc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = movieRecc; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3675B7B29B7E2A800767078 /* Movie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Movie.cpp; path = ../../../../Downloads/Pnetphlix/Movie.cpp; sourceTree = "<group>"; };
-		D3675B7C29B7E2A800767078 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ../../../../Downloads/Pnetphlix/User.h; sourceTree = "<group>"; };
-		D3675B7D29B7E2A800767078 /* MovieDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieDatabase.h; path = ../../../../Downloads/Pnetphlix/MovieDatabase.h; sourceTree = "<group>"; };
-		D3675B7E29B7E2A800767078 /* treemm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = treemm.h; path = ../../../../Downloads/Pnetphlix/treemm.h; sourceTree = "<group>"; };
-		D3675B7F29B7E2A800767078 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../../Downloads/Pnetphlix/main.cpp; sourceTree = "<group>"; };
-		D3675B8029B7E2A800767078 /* MovieDatabase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MovieDatabase.cpp; path = ../../../../Downloads/Pnetphlix/MovieDatabase.cpp; sourceTree = "<group>"; };
-		D3675B8129B7E2A800767078 /* User.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = User.cpp; path = ../../../../Downloads/Pnetphlix/User.cpp; sourceTree = "<group>"; };
-		D3675B8229B7E2A800767078 /* UserDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDatabase.h; path = ../../../../Downloads/Pnetphlix/UserDatabase.h; sourceTree = "<group>"; };
-		D3675B8329B7E2A800767078 /* Recommender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recommender.h; path = ../../../../Downloads/Pnetphlix/Recommender.h; sourceTree = "<group>"; };
-		D3675B8429B7E2A800767078 /* movies.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = movies.txt; path = ../../../../Downloads/Pnetphlix/movies.txt; sourceTree = "<group>"; };
-		D3675B8529B7E2A800767078 /* UserDatabase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UserDatabase.cpp; path = ../../../../Downloads/Pnetphlix/UserDatabase.cpp; sourceTree = "<group>"; };
-		D3675B8629B7E2A800767078 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Movie.h; path = ../../../../Downloads/Pnetphlix/Movie.h; sourceTree = "<group>"; };
-		D3675B8729B7E2A800767078 /* users.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = users.txt; path = ../../../../Downloads/Pnetphlix/users.txt; sourceTree = "<group>"; };
-		D3675B8829B7E2A800767078 /* Recommender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Recommender.cpp; path = ../../../../Downloads/Pnetphlix/Recommender.cpp; sourceTree = "<group>"; };
+		D3E130C829BD7FA900D09738 /* MovieDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDatabase.h; sourceTree = "<group>"; };
+		D3E130C929BD7FD400D09738 /* treemm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = treemm.h; sourceTree = "<group>"; };
+		D3E130CA29BD7FD400D09738 /* MovieDatabase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovieDatabase.cpp; sourceTree = "<group>"; };
+		D3E130CB29BD7FD400D09738 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		D3E130CC29BD7FD400D09738 /* Movie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Movie.cpp; sourceTree = "<group>"; };
+		D3E130CD29BD7FD400D09738 /* UserDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDatabase.h; sourceTree = "<group>"; };
+		D3E130CE29BD7FD400D09738 /* User.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = User.cpp; sourceTree = "<group>"; };
+		D3E130CF29BD7FD400D09738 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D3E130D029BD7FD400D09738 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		D3E130D129BD7FD400D09738 /* movies.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = movies.txt; sourceTree = "<group>"; };
+		D3E130D229BD7FD400D09738 /* UserDatabase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserDatabase.cpp; sourceTree = "<group>"; };
+		D3E130D329BD7FD400D09738 /* Recommender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Recommender.cpp; sourceTree = "<group>"; };
+		D3E130D429BD7FD400D09738 /* users.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = users.txt; sourceTree = "<group>"; };
+		D3E130D529BD7FD400D09738 /* Recommender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recommender.h; sourceTree = "<group>"; };
+		D3E130DC29BE890200D09738 /* userTest.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = userTest.txt; sourceTree = "<group>"; };
+		D3E130DD29BE891F00D09738 /* movieTest.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = movieTest.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				D3675B7329B7E29600767078 /* movieRecc */,
 				D3675B7229B7E29600767078 /* Products */,
+				D3E130DE29BEA24900D09738 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,22 +78,31 @@
 		D3675B7329B7E29600767078 /* movieRecc */ = {
 			isa = PBXGroup;
 			children = (
-				D3675B7F29B7E2A800767078 /* main.cpp */,
-				D3675B7B29B7E2A800767078 /* Movie.cpp */,
-				D3675B8629B7E2A800767078 /* Movie.h */,
-				D3675B8029B7E2A800767078 /* MovieDatabase.cpp */,
-				D3675B7D29B7E2A800767078 /* MovieDatabase.h */,
-				D3675B8429B7E2A800767078 /* movies.txt */,
-				D3675B8829B7E2A800767078 /* Recommender.cpp */,
-				D3675B8329B7E2A800767078 /* Recommender.h */,
-				D3675B7E29B7E2A800767078 /* treemm.h */,
-				D3675B8129B7E2A800767078 /* User.cpp */,
-				D3675B7C29B7E2A800767078 /* User.h */,
-				D3675B8529B7E2A800767078 /* UserDatabase.cpp */,
-				D3675B8229B7E2A800767078 /* UserDatabase.h */,
-				D3675B8729B7E2A800767078 /* users.txt */,
+				D3E130CF29BD7FD400D09738 /* main.cpp */,
+				D3E130CC29BD7FD400D09738 /* Movie.cpp */,
+				D3E130D029BD7FD400D09738 /* Movie.h */,
+				D3E130CA29BD7FD400D09738 /* MovieDatabase.cpp */,
+				D3E130D129BD7FD400D09738 /* movies.txt */,
+				D3E130D329BD7FD400D09738 /* Recommender.cpp */,
+				D3E130D529BD7FD400D09738 /* Recommender.h */,
+				D3E130C929BD7FD400D09738 /* treemm.h */,
+				D3E130CE29BD7FD400D09738 /* User.cpp */,
+				D3E130CB29BD7FD400D09738 /* User.h */,
+				D3E130D229BD7FD400D09738 /* UserDatabase.cpp */,
+				D3E130CD29BD7FD400D09738 /* UserDatabase.h */,
+				D3E130D429BD7FD400D09738 /* users.txt */,
+				D3E130C829BD7FA900D09738 /* MovieDatabase.h */,
+				D3E130DC29BE890200D09738 /* userTest.txt */,
+				D3E130DD29BE891F00D09738 /* movieTest.txt */,
 			);
 			path = movieRecc;
+			sourceTree = "<group>";
+		};
+		D3E130DE29BEA24900D09738 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,12 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3675B8929B7E2A800767078 /* Movie.cpp in Sources */,
-				D3675B8D29B7E2A800767078 /* UserDatabase.cpp in Sources */,
-				D3675B8E29B7E2A800767078 /* Recommender.cpp in Sources */,
-				D3675B8A29B7E2A800767078 /* main.cpp in Sources */,
-				D3675B8B29B7E2A800767078 /* MovieDatabase.cpp in Sources */,
-				D3675B8C29B7E2A800767078 /* User.cpp in Sources */,
+				D3E130D829BD7FD400D09738 /* User.cpp in Sources */,
+				D3E130DA29BD7FD400D09738 /* UserDatabase.cpp in Sources */,
+				D3E130D729BD7FD400D09738 /* Movie.cpp in Sources */,
+				D3E130D929BD7FD400D09738 /* main.cpp in Sources */,
+				D3E130D629BD7FD400D09738 /* MovieDatabase.cpp in Sources */,
+				D3E130DB29BD7FD400D09738 /* Recommender.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

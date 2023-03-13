@@ -40,13 +40,15 @@ bool UserDatabase::load(const string& filename) {
         }
 
         if (line.empty()) {
-            User* newUser = new User(name, email, watch_history);
-            m_users.insert(email, newUser);
+            m_users.insert(email, User(name, email, watch_history));
             watch_history.clear();
             count = 0;
         } else {
             count++;
         }
+    }
+    if (!watch_history.empty()) {
+        m_users.insert(email, User(name, email, watch_history));
     }
     infile.close();
     return true;
@@ -55,9 +57,9 @@ bool UserDatabase::load(const string& filename) {
 
 User* UserDatabase::get_user_from_email(const string& email) const
 {
-    TreeMultimap<std::string, User*>::Iterator it = m_users.find(email);
+    TreeMultimap<std::string, User>::Iterator it = m_users.find(email);
     if(it.is_valid()){
-        return it.get_value();
+        return &(it.get_value());
     }
     return nullptr;
 }

@@ -1,6 +1,8 @@
-dependencies: /Users/yash/Downloads/Pnetphlix/Recommender.cpp \
-  /Users/yash/Downloads/Pnetphlix/Recommender.h \
-  /Users/yash/Downloads/Pnetphlix/UserDatabase.h \
-  /Users/yash/Downloads/Pnetphlix/treemm.h \
-  /Users/yash/Downloads/Pnetphlix/MovieDatabase.h \
-  /Users/yash/Downloads/Pnetphlix/Movie.h
+dependencies: \
+  /Users/yash/Desktop/CS32/movieRecc/movieRecc/Recommender.cpp \
+  /Users/yash/Desktop/CS32/movieRecc/movieRecc/Recommender.h \
+  /Users/yash/Desktop/CS32/movieRecc/movieRecc/UserDatabase.h \
+  /Users/yash/Desktop/CS32/movieRecc/movieRecc/treemm.h \
+  /Users/yash/Desktop/CS32/movieRecc/movieRecc/MovieDatabase.h \
+  /Users/yash/Desktop/CS32/movieRecc/movieRecc/Movie.h \
+  /Users/yash/Desktop/CS32/movieRecc/movieRecc/User.h

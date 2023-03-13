@@ -14,10 +14,10 @@ MovieDatabase::MovieDatabase()
 
 bool MovieDatabase::load(const std::string& filename) {
     bool loadedMovies = loadMovies(filename);
-    bool loadedIDMap = loadIdMap(filename);
-    bool loadedDirMap = loadDirMap(filename);
-    bool loadedActMap = loadActMap(filename);
-    bool loadedGenMap = loadGenMap(filename);
+    bool loadedIDMap = loadIdMap();
+    bool loadedDirMap = loadDirMap();
+    bool loadedActMap = loadActMap();
+    bool loadedGenMap = loadGenMap();
     return (loadedIDMap && loadedMovies &&loadedDirMap && loadedActMap && loadedGenMap);
 }
 Movie* MovieDatabase::get_movie_from_id(const string& id) const

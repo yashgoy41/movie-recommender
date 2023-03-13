@@ -1,4 +1,5 @@
-dependencies: /Users/yash/Downloads/Pnetphlix/MovieDatabase.cpp \
-  /Users/yash/Downloads/Pnetphlix/MovieDatabase.h \
-  /Users/yash/Downloads/Pnetphlix/Movie.h \
-  /Users/yash/Downloads/Pnetphlix/treemm.h
+dependencies: \
+  /Users/yash/Desktop/CS32/movieRecc/movieRecc/MovieDatabase.cpp \
+  /Users/yash/Desktop/CS32/movieRecc/movieRecc/MovieDatabase.h \
+  /Users/yash/Desktop/CS32/movieRecc/movieRecc/Movie.h \
+  /Users/yash/Desktop/CS32/movieRecc/movieRecc/treemm.h

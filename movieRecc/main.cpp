@@ -5,6 +5,7 @@
 #include <iostream>
 #include <string>
 #include <cassert>
+#include "Recommender.h"
 using namespace std;
 
 //////////////////////////i/////////////////////////////////////////////////////
@@ -25,8 +26,8 @@ using namespace std;
   // data files to makde debuggiing easier, so you can replace the string
   // literals with the names of those smaller files.
 
-const string USER_DATAFILE  = "/Users/yash/Desktop/CS32/movieRecc/movieRecc/users.txt";
-const string MOVIE_DATAFILE = "/Users/yash/Desktop/CS32/movieRecc/movieRecc/movies.txt";
+const string USER_DATAFILE  = "/Users/yash/Desktop/CS32/movieRecc/movieRecc/userTest.txt";
+const string MOVIE_DATAFILE = "/Users/yash/Desktop/CS32/movieRecc/movieRecc/movieTest.txt";
 
 //int main()
 //{
@@ -49,24 +50,42 @@ const string MOVIE_DATAFILE = "/Users/yash/Desktop/CS32/movieRecc/movieRecc/movi
 //		else
 //			cout << "Found " << u->get_full_name() << endl;
 //	}
+void findMatches(const Recommender& r,const MovieDatabase& md, const string& user_email, int num_recommendations) {
+ // get up to ten movie recommendations for the user
+    vector<MovieAndRank> recommendations =
+    r.recommend_movies(user_email, num_recommendations);
+    if (recommendations.empty())
+        cout << "We found no movies to recommend :(.\n";
+    else {
+        for (int i = 0; i < recommendations.size(); i++) {
+            const MovieAndRank& mr = recommendations[i];
+            Movie* m = md.get_movie_from_id(mr.movie_id);
+            cout << i+1 << ". " << m->get_title() << " ("
+            << m->get_release_year() << ")\n Rating: "
+            << m->get_rating() << "\n Compatibility Score: "
+            << mr.compatibility_score << "\n";
+        }
+    }
+}
+
 int main()
 {
-//    TreeMultimap<std::string, std::string> myMap;
-//    myMap.insert("Inception", "Christoper Nolan");
-//    myMap.insert("Inception", "Leonardo DiCaprio");
-//    myMap.insert("Inception", "Ellen Page");
-//    myMap.insert("Irreversible", "Monica Bellucci");
-//    TreeMultimap<std::string, std::string>::Iterator it =  myMap.find("Inception");
-//
-//    assert(it.get_value() == "Christoper Nolan");
-//    it.advance();
-//    assert(it.get_value() == "Leonardo DiCaprio");
-//    it.advance();
-//    assert(it.get_value() == "Ellen Page");
+    TreeMultimap<std::string, std::string> myMap;
+    myMap.insert("Inception", "Christoper Nolan");
+    myMap.insert("Inception", "Leonardo DiCaprio");
+    myMap.insert("Inception", "Ellen Page");
+    myMap.insert("Irreversible", "Monica Bellucci");
+    TreeMultimap<std::string, std::string>::Iterator it =  myMap.find("Inception");
+
+    assert(it.get_value() == "Christoper Nolan");
+    it.advance();
+    assert(it.get_value() == "Leonardo DiCaprio");
+    it.advance();
+    assert(it.get_value() == "Ellen Page");
     
 //    UserDatabase udb;
 //    udb.load(USER_DATAFILE);
-//    cerr << "Passed all tests" << endl;
+    cerr << "Passed all tests" << endl;
 //    for (;;)
 //    {
 //        cout << "Enter user email address (or quit): ";
@@ -87,11 +106,18 @@ int main()
 //            }
 //        }
 //    }
-    
-    MovieDatabase mdb;
-    mdb.load(MOVIE_DATAFILE);
-    for (;;)
-    {
+//
+//    MovieDatabase mdb;
+//    mdb.load(MOVIE_DATAFILE);
+//    Recommender r(udb, mdb);
+//    for (;;)
+//    {
+//        cout << "Enter email (or quit): ";
+//        string id;
+//        getline(cin, id);
+//        if (id == "quit")
+//            return 0;
+//        findMatches(r, mdb, id, 20);
 //        cout << "Enter movie id (or quit): ";
 //        string id;
 //        getline(cin, id);
@@ -130,24 +156,25 @@ int main()
 //            }
 //            cout << endl;
 //        }
-        cout << "Enter genre name (or quit): ";
-        string id;
-        getline(cin, id);
-        if (id == "quit")
-            return 0;
-        vector<Movie*> movies = mdb.get_movies_with_genre(id);
-        if (movies.empty())
-            cout << "No movie in the database has that id." << endl;
-        else{
-
-            cout << "Found movies with the genre " << id << endl;
-            vector<Movie*>::iterator it = movies.begin();
-            while(it != movies.end()){
-                cout << (*it)->get_title() << endl;
-                it++;
-            }
-        }
-    }
+//        cout << "Enter email (or quit): ";
+//        string id;
+//        getline(cin, id);
+//        if (id == "quit")
+//            return 0;
+//        vector<Movie*> movies = mdb.get_movies_with_genre(id);
+//        if (movies.empty())
+//            cout << "No movie in the database has that id." << endl;
+//        else{
+//
+//            cout << "Found movies with the genre " << id << endl;
+//            vector<Movie*>::iterator it = movies.begin();
+//            while(it != movies.end()){
+//                cout << (*it)->get_title() << endl;
+//                it++;
+//            }
+//        }
+    
+//    }
 }
     
     

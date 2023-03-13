@@ -26,6 +26,10 @@ class Recommender
                                                int movie_count) const;
 
   private:
+    const UserDatabase& m_udb;
+    const MovieDatabase& m_mdb;
 };
+
+
 
 #endif // RECOMMENDER_INCLUDED

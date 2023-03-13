@@ -60,7 +60,7 @@ class MovieDatabase
         }
         return true;
     }
-    bool loadIdMap(const std::string& filename) {
+    bool loadIdMap() {
         if(m_movies.empty()){
             return false;
         }
@@ -74,7 +74,7 @@ class MovieDatabase
         return true;
     }
 
-    bool loadDirMap(const std::string& filename){
+    bool loadDirMap(){
         if(m_movies.empty()){
             return false;
         }
@@ -91,7 +91,7 @@ class MovieDatabase
         }
         return true;
     }
-    bool loadActMap(const std::string& filename){
+    bool loadActMap(){
         if(m_movies.empty()){
             return false;
         }
@@ -108,7 +108,7 @@ class MovieDatabase
         }
         return true;
     }
-    bool loadGenMap(const std::string& filename){
+    bool loadGenMap(){
         if(m_movies.empty()){
             return false;
         }

@@ -6,6 +6,26 @@
 
 class UserDatabase;
 class MovieDatabase;
+class Timer
+{
+  public:
+    Timer()
+    {
+        start();
+    }
+    void start()
+    {
+        m_time = std::chrono::high_resolution_clock::now();
+    }
+    double elapsed() const
+    {
+        std::chrono::duration<double, std::milli> diff =
+                          std::chrono::high_resolution_clock::now() - m_time;
+        return diff.count();
+    }
+  private:
+    std::chrono::high_resolution_clock::time_point m_time;
+};
 
 struct MovieAndRank
 {

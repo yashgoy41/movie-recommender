@@ -26,8 +26,8 @@ using namespace std;
   // data files to makde debuggiing easier, so you can replace the string
   // literals with the names of those smaller files.
 
-const string USER_DATAFILE  = "/Users/yash/Desktop/CS32/movieRecc/movieRecc/userTest.txt";
-const string MOVIE_DATAFILE = "/Users/yash/Desktop/CS32/movieRecc/movieRecc/movieTest.txt";
+const string USER_DATAFILE  = "/Users/yash/Desktop/CS32/movieRecc/movieRecc/users.txt";
+const string MOVIE_DATAFILE = "/Users/yash/Desktop/CS32/movieRecc/movieRecc/movies.txt";
 
 //int main()
 //{
@@ -111,14 +111,16 @@ int main()
     MovieDatabase mdb;
     mdb.load(MOVIE_DATAFILE);
     Recommender r(udb, mdb);
+    
+    Timer timer;
     for (;;)
     {
         cout << "Enter email (or quit): ";
         string id;
         getline(cin, id);
-        if (id == "quit")
-            return 0;
+        timer.start();
         findMatches(r, mdb, id, 20);
+        cout <<timer.elapsed() <<endl;
 //        cout << "Enter movie id (or quit): ";
 //        string id;
 //        getline(cin, id);

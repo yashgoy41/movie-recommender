@@ -118,14 +118,14 @@ int main()
         cout << "Enter email (or quit): ";
         string id;
         getline(cin, id);
+        if (id == "quit")
+            return 0;
         timer.start();
         findMatches(r, mdb, id, 20);
         cout <<timer.elapsed() <<endl;
 //        cout << "Enter movie id (or quit): ";
 //        string id;
 //        getline(cin, id);
-//        if (id == "quit")
-//            return 0;
 //        Movie* m = mdb.get_movie_from_id(id);
 //        if (m == nullptr)
 //            cout << "No movie in the database has that id." << endl;

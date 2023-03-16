@@ -45,7 +45,7 @@ vector<Movie*> MovieDatabase::get_movies_with_actor(const string& actor) const {
     string lowercase_actor = actor;
     std::transform(lowercase_actor.begin(), lowercase_actor.end(), lowercase_actor.begin(), ::tolower);
     vector<Movie*> movies;
-        TreeMultimap<std::string, Movie*>::Iterator it = m_dirMap.find(lowercase_actor);
+        TreeMultimap<std::string, Movie*>::Iterator it = m_actMap.find(lowercase_actor);
         while (it.is_valid()) {
             movies.push_back(it.get_value());
             it.advance();
@@ -57,7 +57,7 @@ vector<Movie*> MovieDatabase::get_movies_with_genre(const string& genre) const {
     string lowercase_genre = genre;
     std::transform(lowercase_genre.begin(), lowercase_genre.end(), lowercase_genre.begin(), ::tolower);
     vector<Movie*> movies;
-    TreeMultimap<std::string, Movie*>::Iterator it = m_dirMap.find(lowercase_genre);
+    TreeMultimap<std::string, Movie*>::Iterator it = m_genMap.find(lowercase_genre);
     while (it.is_valid()) {
         movies.push_back(it.get_value());
         it.advance();
@@ -76,7 +76,7 @@ bool MovieDatabase::loadGenMap(){
         for(auto gen : genres){
             std::string lowercase_genre= gen;
             std::transform(lowercase_genre.begin(), lowercase_genre.end(), lowercase_genre.begin(), ::tolower);
-            m_dirMap.insert(lowercase_genre, &(*it));
+            m_genMap.insert(lowercase_genre, &(*it));
         }
         it++;
     }
@@ -94,7 +94,7 @@ bool MovieDatabase::loadActMap(){
         for(auto act : actors){
             std::string lowercase_actor= act;
             std::transform(lowercase_actor.begin(), lowercase_actor.end(), lowercase_actor.begin(), ::tolower);
-            m_dirMap.insert(lowercase_actor, &(*it));
+            m_actMap.insert(lowercase_actor, &(*it));
         }
         it++;
     }
